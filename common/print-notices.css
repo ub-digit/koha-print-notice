@@ -1,0 +1,197 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+body {
+  margin: 15mm 19mm 0mm 19mm;
+  font-family: "Times New Roman", Times, serif;
+
+}
+
+h1, h2, h3 {
+  font-family: 'Arial Narrow', 'Arial', sans-serif;
+}
+h1 {
+  font-size: 18pt;
+}
+
+
+.print-notice {
+  font-family: serif;
+  font-size: 11pt;
+  white-space: normal;
+}
+
+.print-notice .header {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding-left: 4mm;
+}
+
+.print-notice .header .logo {
+  display: inline-block;
+}
+
+.print-notice .header .logo img {
+  height: 24mm;
+}
+
+.print-notice .addresses {
+  clear: both;
+  height: 34mm;
+  margin-top: 8mm;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+}
+
+.print-notice .addresses .sender {
+  position: relative;
+  float: left;
+  width: 60mm;
+  height: 34mm;
+  font-weight: bold;
+}
+
+.print-notice .addresses .receiver {
+  position: relative;
+  float: left;
+  width: 64mm;
+  height: 34mm;
+  margin-left: 41mm;
+}
+
+.print-notice .addresses .receiver .name, .print-notice .addresses .receiver .address1, .print-notice .addresses .receiver .address2, .print-notice .addresses .receiver .zip {
+  display:block;
+}
+
+.print-notice .addresses .receiver .address1 {
+  margin-top:1em;
+}
+
+.body {
+  clear: both;
+}
+
+.print-notice .body .preamble, .print-notice .footer .preamble {
+  font-weight: bold;
+}
+
+.print-notice .body .title, .print-notice .body .author {
+  display: block;
+}
+
+.print-notice .body .title {
+  font-style: italic;
+}
+
+
+.print-notice .body .checkouts-list {
+  width: 100%;
+  font-size: 10pt;
+}
+
+.print-notice .body .checkouts-list .checkouts-row > div, .print-notice .body .checkouts-list .checkouts-headers > div {
+  display: inline-block;
+  max-height: 2.3em;
+  margin-right: 2mm;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.print-notice .body .checkouts br {
+  display: none;
+}
+
+.print-notice .body .checkouts-list .checkouts-row {
+  margin-bottom: 2mm;
+}
+
+.print-notice .body .checkouts-list .checkouts-row > div {
+  vertical-align: top;
+}
+
+.print-notice .body .checkouts-list .checkouts div.checkouts-row:nth-of-type(15n+0) {
+  page-break-before: always;
+  margin-top: 30mm;
+}
+
+.print-notice .body .checkouts-list .checkouts-headers {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.print-notice .body .checkouts-list div.title-col {
+  width: 60mm;
+}
+
+.print-notice .body .checkouts-list div.author-col {
+  width: 40mm;
+}
+
+.print-notice .body .checkouts-list div.barcode-col {
+  width: 30mm;
+}
+
+.print-notice .body .checkouts-list div.date-col {
+  width: 20mm;
+}
+
+
+
+
+/* CHECKOUTS TABLE */
+/*
+.print-notice .body .checkouts-table {
+  text-align: left;
+  font-size: 10pt;
+  width: 100%;
+}
+
+.print-notice .body .checkouts-table th {
+  vertical-align: bottom;
+}
+
+.print-notice .body .checkouts-table tbody tr:nth-child(1n+0)::after {
+  counter-increment: row;
+  content: counter(row);
+}
+
+.print-notice .body .checkouts-table tbody tr:nth-child(16n+0) td div {
+  page-break-before: always;
+}
+
+.print-notice .body .checkouts-table td {
+  vertical-align: top;
+}
+
+.print-notice .body .checkouts-table td.title-col, .print-notice .body .checkouts-table th.title-col {
+  width: 40%;
+}
+
+.print-notice .body .checkouts-table td.title-col div{
+  width: 70mm;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.print-notice .body .checkouts-table td.author-col {
+  width: 20%;
+}
+
+.print-notice .body .checkouts-table td.barcode-col {
+  width: 10%;
+}
+
+.print-notice .body .checkouts-table td.date-col {
+  width: 10%;
+}
+*/
+
+.print-notice .footer {
+  padding-top: 15mm;
+  padding-bottom: 15mm;
+  page-break-inside: avoid;
+}
