@@ -39,7 +39,7 @@ then
     exit
 fi
 
-echo 'set smtp_url = "smtp://smtp.gu.se:25"' > /root/.muttrc
+echo "set smtp_url = \"smtp://${smtp_host}:${smtp_port}\"" > /root/.muttrc
 echo 'set from = "Koha <koha@ub.gu.se>"' >> /root/.muttrc
 echo 'set ssl_starttls=no' >> /root/.muttrc
 echo 'set ssl_force_tls=no' >> /root/.muttrc
